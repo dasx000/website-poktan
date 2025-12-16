@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Profil Kelompok Tani</title>
+  <meta name="description" content="Website Profil Kelompok Tani - GitHub Pages" />
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --primary: #2e7d32;
+      --secondary: #81c784;
+      --dark: #1b1b1b;
+      --light: #f9f9f9;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background: var(--light);
+      color: var(--dark);
+      line-height: 1.6;
+    }
+
+    header {
+      background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+                  url('https://images.unsplash.com/photo-1501004318641-b39e6451bec6?auto=format&fit=crop&w=1400&q=80');
+      background-size: cover;
+      background-position: center;
+      color: white;
+      padding: 80px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      max-width: 700px;
+      margin: auto;
+      font-size: 1rem;
+    }
+
+    nav {
+      background: white;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+
+    nav ul {
+      display: flex;
+      justify-content: center;
+      list-style: none;
+      flex-wrap: wrap;
+    }
+
+    nav ul li a {
+      display: block;
+      padding: 15px 20px;
+      text-decoration: none;
+      color: var(--dark);
+      font-weight: 500;
+    }
+
+    nav ul li a:hover {
+      background: var(--secondary);
+      color: white;
+    }
+
+    section {
+      padding: 60px 20px;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    section h2 {
+      text-align: center;
+      margin-bottom: 40px;
+      color: var(--primary);
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: white;
+      padding: 25px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+      transition: transform 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card h3 {
+      margin-bottom: 10px;
+      color: var(--primary);
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 15px;
+    }
+
+    .gallery img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+
+    footer {
+      background: var(--primary);
+      color: white;
+      text-align: center;
+      padding: 25px 15px;
+    }
+
+    footer p {
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <h1>Kelompok Tani Sejahtera</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+  </header>
+
+  <!-- NAVIGATION -->
+  <nav>
+    <ul>
+      <li><a href="#profil">Profil</a></li>
+      <li><a href="#visi">Visi & Misi</a></li>
+      <li><a href="#kegiatan">Kegiatan</a></li>
+      <li><a href="#galeri">Galeri</a></li>
+      <li><a href="#kontak">Kontak</a></li>
+    </ul>
+  </nav>
+
+  <!-- PROFIL -->
+  <section id="profil">
+    <h2>Profil Kelompok Tani</h2>
+    <p style="text-align:center; max-width:900px; margin:auto;">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+    </p>
+  </section>
+
+  <!-- DATA UMUM -->
+  <section id="data">
+    <h2>Data Umum Kelompok</h2>
+    <div class="grid">
+      <div class="card"><h3>Nama Kelompok</h3><p>Lorem Ipsum Tani</p></div>
+      <div class="card"><h3>Tahun Berdiri</h3><p>20XX</p></div>
+      <div class="card"><h3>Jumlah Anggota</h3><p>25 Orang</p></div>
+      <div class="card"><h3>Luas Lahan Total</h3><p>45 Hektar</p></div>
+    </div>
+  </section>
+
+  <!-- KOMODITAS -->
+  <section id="komoditas">
+    <h2>Komoditas Unggulan</h2>
+    <div class="grid">
+      <div class="card"><h3>Padi</h3><p>Luas: 20 Ha<br>Produksi: Lorem Ipsum</p></div>
+      <div class="card"><h3>Jagung</h3><p>Luas: 15 Ha<br>Produksi: Lorem Ipsum</p></div>
+      <div class="card"><h3>Kakao</h3><p>Luas: 10 Ha<br>Produksi: Lorem Ipsum</p></div>
+    </div>
+  </section>
+
+  <!-- DAFTAR ANGGOTA -->
+  <section id="anggota">
+    <h2>Daftar Anggota Kelompok</h2>
+    <div class="card" style="overflow-x:auto;">
+      <table style="width:100%; border-collapse:collapse;">
+        <thead>
+          <tr style="background:#81c784; color:white;">
+            <th style="padding:10px; border:1px solid #ddd;">No</th>
+            <th style="padding:10px; border:1px solid #ddd;">Nama Anggota</th>
+            <th style="padding:10px; border:1px solid #ddd;">Luas Lahan (Ha)</th>
+            <th style="padding:10px; border:1px solid #ddd;">Komoditas</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td style="padding:8px; border:1px solid #ddd;">1</td><td style="padding:8px; border:1px solid #ddd;">Lorem Ipsum</td><td style="padding:8px; border:1px solid #ddd;">2</td><td style="padding:8px; border:1px solid #ddd;">Padi</td></tr>
+          <tr><td style="padding:8px; border:1px solid #ddd;">2</td><td style="padding:8px; border:1px solid #ddd;">Lorem Ipsum</td><td style="padding:8px; border:1px solid #ddd;">1.5</td><td style="padding:8px; border:1px solid #ddd;">Jagung</td></tr>
+          <tr><td style="padding:8px; border:1px solid #ddd;">3</td><td style="padding:8px; border:1px solid #ddd;">Lorem Ipsum</td><td style="padding:8px; border:1px solid #ddd;">3</td><td style="padding:8px; border:1px solid #ddd;">Kakao</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- KONTAK -->
+  <section id="kontak">
+    <h2>Kontak Kelompok</h2>
+    <div class="grid">
+      <div class="card"><h3>Alamat</h3><p>Lorem ipsum dolor sit amet</p></div>
+      <div class="card"><h3>Ketua Kelompok</h3><p>Lorem Ipsum</p></div>
+      <div class="card"><h3>No. HP</h3><p>08xxxxxxxxxx</p></div>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 Kelompok Tani | Website Profil Resmi</p>
+  </footer>
+
+</body>
+</html>
