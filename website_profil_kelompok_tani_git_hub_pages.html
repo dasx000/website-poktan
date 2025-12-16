@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profil Kelompok Tani</title>
+    <meta
+      name="description"
+      content="Website Profil Kelompok Tani - GitHub Pages"
+    />
+
+    <!-- Google Font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      :root {
+        --primary: #2e7d32;
+        --secondary: #81c784;
+        --dark: #1b1b1b;
+        --light: #f9f9f9;
+      }
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Poppins', sans-serif;
+      }
+
+      body {
+        background: var(--light);
+        color: var(--dark);
+        line-height: 1.6;
+      }
+
+      header {
+        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+          url('https://images.unsplash.com/photo-1501004318641-b39e6451bec6?auto=format&fit=crop&w=1400&q=80');
+        background-size: cover;
+        background-position: center;
+        color: white;
+        padding: 80px 20px;
+        text-align: center;
+      }
+
+      header h1 {
+        font-size: 2.5rem;
+        margin-bottom: 10px;
+      }
+
+      header p {
+        max-width: 700px;
+        margin: auto;
+        font-size: 1rem;
+      }
+
+      nav {
+        background: white;
+        position: sticky;
+        top: 0;
+        z-index: 100;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+      }
+
+      nav ul {
+        display: flex;
+        justify-content: center;
+        list-style: none;
+        flex-wrap: wrap;
+      }
+
+      nav ul li a {
+        display: block;
+        padding: 15px 20px;
+        text-decoration: none;
+        color: var(--dark);
+        font-weight: 500;
+      }
+
+      nav ul li a:hover {
+        background: var(--secondary);
+        color: white;
+      }
+
+      section {
+        padding: 60px 20px;
+        max-width: 1100px;
+        margin: auto;
+      }
+
+      section h2 {
+        text-align: center;
+        margin-bottom: 40px;
+        color: var(--primary);
+      }
+
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 20px;
+      }
+
+      .card {
+        background: white;
+        padding: 25px;
+        border-radius: 10px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+        transition: transform 0.3s;
+      }
+
+      .card:hover {
+        transform: translateY(-5px);
+      }
+
+      .card h3 {
+        margin-bottom: 10px;
+        color: var(--primary);
+      }
+
+      .gallery {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 15px;
+      }
+
+      .gallery img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+        border-radius: 10px;
+      }
+
+      footer {
+        background: var(--primary);
+        color: white;
+        text-align: center;
+        padding: 25px 15px;
+      }
+
+      footer p {
+        font-size: 0.9rem;
+      }
+
+      @media (max-width: 600px) {
+        header h1 {
+          font-size: 2rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header>
+      <h1>Kelompok Tani Sejahtera</h1>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua.
+      </p>
+    </header>
+
+    <!-- NAVIGATION -->
+    <nav>
+      <ul>
+        <li><a href="#profil">Profil</a></li>
+        <li><a href="#visi">Visi & Misi</a></li>
+        <li><a href="#kegiatan">Kegiatan</a></li>
+        <li><a href="#galeri">Galeri</a></li>
+        <li><a href="#kontak">Kontak</a></li>
+      </ul>
+    </nav>
+
+    <!-- PROFIL -->
+    <section id="profil">
+      <h2>Profil Kelompok Tani</h2>
+      <p style="text-align: center; max-width: 800px; margin: auto">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+        commodo consequat.
+      </p>
+    </section>
+
+    <!-- VISI MISI -->
+    <section id="visi">
+      <h2>Visi & Misi</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>Visi</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sit
+            amet accumsan tortor.
+          </p>
+        </div>
+        <div class="card">
+          <h3>Misi</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- KEGIATAN -->
+    <section id="kegiatan">
+      <h2>Kegiatan Kelompok</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>Budidaya Tanaman</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt.
+          </p>
+        </div>
+        <div class="card">
+          <h3>Pelatihan Petani</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt.
+          </p>
+        </div>
+        <div class="card">
+          <h3>Pemasaran Hasil</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- GALERI -->
+    <section id="galeri">
+      <h2>Galeri Kegiatan</h2>
+      <div class="gallery">
+        <img
+          src="https://images.unsplash.com/photo-1523741543316-beb7fc7023d8?auto=format&fit=crop&w=800&q=80"
+          alt="galeri"
+        />
+        <img
+          src="https://images.unsplash.com/photo-1523741543316-beb7fc7023d8?auto=format&fit=crop&w=800&q=80"
+          alt="galeri"
+        />
+        <img
+          src="https://images.unsplash.com/photo-1500595046743-cd271d694d30?auto=format&fit=crop&w=800&q=80"
+          alt="galeri"
+        />
+        <img
+          src="https://images.unsplash.com/photo-1560493676-04071c5f467b?auto=format&fit=crop&w=800&q=80"
+          alt="galeri"
+        />
+      </div>
+    </section>
+
+    <!-- KONTAK -->
+    <section id="kontak">
+      <h2>Kontak</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>Alamat</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+        <div class="card">
+          <h3>Telepon</h3>
+          <p>+62 8xx xxxx xxxx</p>
+        </div>
+        <div class="card">
+          <h3>Email</h3>
+          <p>kelompoktani@email.com</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+      <p>© 2025 Kelompok Tani Sejahtera | Dibuat untuk GitHub Pages</p>
+    </footer>
+  </body>
+</html>
